@@ -1,0 +1,130 @@
+Dec 05, 2024 4:53:54 PM org.example.Configuration startSystem
+WARNING: Attempted to start empty configuration
+Dec 05, 2024 4:54:07 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 4:54:07 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 4:54:25 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 4:54:33 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 05, 2024 8:23:11 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 8:23:11 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 8:23:18 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 8:23:33 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 05, 2024 8:23:37 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 8:27:35 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 8:27:35 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 8:27:49 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 8:27:58 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 05, 2024 9:28:47 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 9:28:47 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 9:28:52 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 9:32:00 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 9:32:00 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 9:32:01 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 10:05:36 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 10:05:36 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 10:05:37 PM org.example.Configuration startSystem
+INFO: System started
+Dec 05, 2024 10:06:43 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 05, 2024 10:06:43 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 05, 2024 10:06:50 PM org.example.Configuration startSystem
+INFO: System started
+Dec 06, 2024 12:31:11 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 06, 2024 12:31:11 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 06, 2024 12:31:12 PM org.example.Configuration startSystem
+INFO: System started
+Dec 06, 2024 12:32:07 PM org.example.Configuration startSystem
+WARNING: Attempted to start empty configuration
+Dec 06, 2024 12:32:18 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 06, 2024 12:32:18 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 06, 2024 12:32:19 PM org.example.Configuration startSystem
+INFO: System started
+Dec 06, 2024 12:33:49 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 06, 2024 12:33:49 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 06, 2024 12:33:53 PM org.example.Configuration startSystem
+INFO: System started
+Dec 06, 2024 12:36:02 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 06, 2024 12:36:02 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 06, 2024 12:36:04 PM org.example.Configuration startSystem
+INFO: System started
+Dec 06, 2024 12:36:14 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 07, 2024 10:24:21 AM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 07, 2024 10:24:21 AM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 07, 2024 10:24:30 AM org.example.Configuration startSystem
+INFO: System started
+Dec 07, 2024 10:24:49 AM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 07, 2024 11:19:39 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 07, 2024 11:19:39 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 07, 2024 11:20:06 PM org.example.Configuration startSystem
+INFO: System started
+Dec 07, 2024 11:22:30 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 07, 2024 11:27:02 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 07, 2024 11:27:02 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 07, 2024 11:27:04 PM org.example.Configuration startSystem
+INFO: System started
+Dec 07, 2024 11:32:59 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 07, 2024 11:32:59 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 07, 2024 11:33:01 PM org.example.Configuration startSystem
+INFO: System started
+Dec 10, 2024 2:56:47 PM org.example.Configuration startSystem
+WARNING: Attempted to start empty configuration
+Dec 10, 2024 2:56:57 PM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 10, 2024 2:56:57 PM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 10, 2024 2:56:58 PM org.example.Configuration startSystem
+INFO: System started
+Dec 10, 2024 2:57:07 PM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 12, 2024 3:01:23 AM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 12, 2024 3:01:23 AM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 12, 2024 3:01:27 AM org.example.Configuration startSystem
+INFO: System started
+Dec 12, 2024 3:56:49 AM org.example.Configuration loadFromJsonFile
+INFO: Configuration saved to firsttest.json
+Dec 12, 2024 3:56:49 AM org.example.Configuration showConfiguration
+INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
+Dec 12, 2024 3:56:51 AM org.example.Configuration startSystem
+INFO: System started
