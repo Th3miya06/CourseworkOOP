@@ -26,6 +26,7 @@ public class Vendor implements Runnable{
         this.id = id;
     }
 
+    //The vendor will call addTicket method for each vendor and will add tickets to the ticket pool
     @Override
     public void run() {
         for (int i = 1; i <=totTickets; i++) {

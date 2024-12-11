@@ -26,6 +26,7 @@ public class Customer implements Runnable{
         this.quantity = quantity;
     }
 
+    //method to send websocket messages to the system log display at the front end
     private void sendWebSocketMessage(String message) {
         try {
             WebSocketHandler.broadcastMessage(message);
@@ -36,7 +37,7 @@ public class Customer implements Runnable{
 
 
 
-
+    //The customer will call the removeTicket method for each customer thread to show the buying process
     @Override
     public void run() {
         for (int i = 0; i < quantity; i++) {

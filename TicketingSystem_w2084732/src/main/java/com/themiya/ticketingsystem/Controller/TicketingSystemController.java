@@ -5,13 +5,14 @@ import com.themiya.ticketingsystem.Service.TicketingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@CrossOrigin
+@RestController//Provides endpoint for configuring and controlling the ticketing system
+@CrossOrigin //Enable cross-origin request . Prevent springboot CORS ERROR
 public class TicketingSystemController {
 
     @Autowired
     private TicketingService ticketingService;
 
+    //configure the system with the necessary parameters(POST)
     @PostMapping("/config")
     public String setConfig(@RequestBody Configuration config) {
         try {
@@ -23,6 +24,7 @@ public class TicketingSystemController {
         }
     }
 
+    //start the system when request is sent(POST)
     @PostMapping("/start")
     public String startSystem(){
         try{
@@ -34,6 +36,7 @@ public class TicketingSystemController {
         }
     }
 
+    //Stop the system when the request is sent from the front end(POST)
     @PostMapping("/stop")
     public String stopSystem(){
         try{

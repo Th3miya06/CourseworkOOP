@@ -31,7 +31,7 @@ public class TicketingService {
         initialization();
     }
 
-
+    //method to initialise the system with necessary parameters. This where the vendors customers are initialised
     public void initialization(){
         ticketPool = new TicketPool(config.getMaxTicketCapacity(), config.getTotalTickets());
         vendors = new Vendor[config.getNumOfVendors()];
@@ -52,6 +52,7 @@ public class TicketingService {
         LOGGER.info("System Configured");
     }
 
+    //Method used for starting the system
     public void startSystem(){
         //check if the configured object is empty for further precaution
         if (config.getTotalTickets() <= 0){
@@ -60,22 +61,27 @@ public class TicketingService {
         }
 
         if(!isRunning) {
-            isRunning = true;
+            isRunning = true; //isRunning set to true to indicate the system is running
 
+            //Each vendor thread is created
             for (int i = 0; i <vendorThreads.length ; i++) {
                 vendorThreads[i] = new Thread(vendors[i],"Vendor - "+i);
 
             }
 
+            //Each vendor thread is started
             for (int i = 0; i <vendorThreads.length ; i++) {
                 vendorThreads[i].start();
             }
 
+            //Each customer thread is created
             for (int i = 0; i <customerThreads.length ; i++) {
                 customerThreads[i] = new Thread(customers[i],"Customer - "+i);
 
 
             }
+
+            //Each customer thread is started
             for (int i = 0; i <customerThreads.length ; i++) {
                 customerThreads[i].start();
             }
@@ -88,8 +94,9 @@ public class TicketingService {
 
     }
 
+    //Method used for stopping the system
     public void stopSystem() {
-        if (isRunning) {
+        if (isRunning) {//isRunning is true when the system is running so change to false
             isRunning = false;
 
 
@@ -108,7 +115,7 @@ public class TicketingService {
             for (int i = 0; i < customerThreads.length; i++) {
                 customerThreads[i].interrupt();
                 try {
-                    customerThreads[i].join();
+                    customerThreads[i].join(); //Each thread will wait until one thread finishes its job
                 } catch (InterruptedException e) {
                     LOGGER.warning("Interrupted while stopping customer thread"+i);
                 }
