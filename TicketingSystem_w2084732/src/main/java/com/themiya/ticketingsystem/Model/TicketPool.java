@@ -55,7 +55,7 @@ public class TicketPool {
         this.ticketCounter--; //decrease the ticket counter relative to the total tickets
         notifyAll(); //notify all waiting threads
 
-        String message = Thread.currentThread().getName()+"has added a ticket to the pool. Curren size is "+tickets.size();
+        String message = Thread.currentThread().getName()+"has added a ticket to the pool. Current size is "+tickets.size();
         sendWebSocketMessage(message);
 
 
