@@ -128,3 +128,15 @@ Dec 12, 2024 3:56:49 AM org.example.Configuration showConfiguration
 INFO: Current Configuration - Total Tickets: 10, Max Capacity: 5, Vendors: 5, Customers: 5
 Dec 12, 2024 3:56:51 AM org.example.Configuration startSystem
 INFO: System started
+Dec 12, 2024 6:08:57 AM org.example.Configuration validateMaxTicketCapacity
+WARNING: Invalid configuration: Max ticket capacity exceeds total tickets
+Dec 12, 2024 6:18:39 AM org.example.Configuration validateMaxTicketCapacity
+WARNING: Invalid configuration: Max ticket capacity exceeds total tickets
+Dec 12, 2024 6:20:47 AM org.example.Configuration validateQuantity
+WARNING: Invalid configuration: Purchase quantity exceeds total tickets available
+Dec 12, 2024 6:20:58 AM org.example.Configuration startSystem
+INFO: System started
+Dec 12, 2024 6:21:08 AM org.example.Configuration stopSystem
+INFO: System stopped successfully
+Dec 12, 2024 6:56:13 AM org.example.Configuration stopSystem
+WARNING: Attempted to stop non-running system

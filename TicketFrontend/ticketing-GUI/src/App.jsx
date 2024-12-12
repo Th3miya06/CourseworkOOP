@@ -3,6 +3,7 @@ import { useState ,useEffect } from 'react';
 import ConfigurationForm from './components/ConfigurationForm';
 import ControlPanel from './components/ControlPanel';
 import LogDisplay from './components/LogDisplay';
+import TicketInfo from './components/TicketInfo';
 import { websocketService } from './services/websocket';
 
 const App = () => {
@@ -10,6 +11,12 @@ const App = () => {
   const [logs, setLogs] = useState([]);
   const [error, setError] = useState(null);
   const [isConfigured, setIsConfigured] = useState(false);
+  const [systemStats, setSystemStats] = useState({
+    totalTickets: 0,
+    maxTicketCapacity: 0,
+    numOfVendors: 0,
+    numOfCustomers: 0
+  });
 
   useEffect(() => {
     console.log('Setting up WebSocket connection...');
@@ -57,6 +64,14 @@ const App = () => {
       if (!response.ok) {
         throw new Error('Failed to save configuration');
       }
+
+      setSystemStats(prevStats => ({
+        ...prevStats,
+        totalTickets: config.totalTickets,
+        maxTicketCapacity: config.maxTicketCapacity,
+        numOfVendors: config.numOfVendors,
+        numOfCustomers: config.numOfCustomers
+      }));
       
       setIsConfigured(true);
       addLog('Configuration saved successfully');
@@ -128,15 +143,21 @@ const App = () => {
         </div>
       )}
 
-      <ConfigurationForm onSubmit={handleConfigSubmit} />
-      
-      <ControlPanel 
-        onStart={handleStart}
-        onStop={handleStop}
-        isRunning={isRunning}
-      />
-      
-      <LogDisplay logs={logs} />
+      <div className="two-column-layout">
+        <div className="left-column">
+          <ConfigurationForm onSubmit={handleConfigSubmit} />
+          <ControlPanel 
+            onStart={handleStart}
+            onStop={handleStop}
+            isRunning={isRunning}
+          />
+        </div>
+        
+        <div className="right-column">
+          <TicketInfo stats={systemStats} />
+          <LogDisplay logs={logs} />
+        </div>
+      </div>
     </div>
   );
 };
