@@ -66,6 +66,26 @@ public class Configuration {
         }
     }
 
+    private boolean validateMaxTicketCapacity(int maxCapacity, int totalTickets) {
+        if (maxCapacity > totalTickets) {
+            System.out.println("Error: Max ticket capacity (" + maxCapacity +
+                    ") cannot exceed total tickets (" + totalTickets + ")");
+            LOGGER.warning("Invalid configuration: Max ticket capacity exceeds total tickets");
+            return false;
+        }
+        return true;
+    }
+
+    private boolean validateQuantity(int quantity, int totalTickets) {
+        if (quantity > totalTickets) {
+            System.out.println("Error: Customer purchase quantity (" + quantity +
+                    ") cannot exceed total available tickets (" + totalTickets + ")");
+            LOGGER.warning("Invalid configuration: Purchase quantity exceeds total tickets available");
+            return false;
+        }
+        return true;
+    }
+
     public void userConfig() {
         Scanner scan = new Scanner(System.in);
         boolean running = true;
@@ -132,14 +152,30 @@ public class Configuration {
 
     public void inputConfiguration(Scanner scan) {
         this.totalTickets = getValidateInput(scan,"Enter the total number of tickets(greater than 0): ");
-        this.maxTicketCapacity = getValidateInput(scan, "Enter the max ticket capacity: ");
+
+        while (true) {
+            int proposedCapacity = getValidateInput(scan, "Enter the max ticket capacity: ");
+            if (validateMaxTicketCapacity(proposedCapacity, this.totalTickets)) {
+                this.maxTicketCapacity = proposedCapacity;
+                break;
+            }
+            // If validation fails, prompt will repeat
+        }
+
         this.ticketReleaseRate = getValidateInput(scan, "Enter the ticket release rate (greater than 0): ");
         this.customerRetrievalRate = getValidateInput(scan,"Enter the customer retrieval rate (greater than 0): ");
 
         System.out.println("---Thread Configuration---");
         this.numOfVendors = getValidateInput(scan,"Enter the number of vendors: ");
         this.numOfCustomers = getValidateInput(scan,"Enter the number of customers: ");
-        this.quantity = getValidateInput(scan,"Enter the quantity a customer will buy : ");
+        while (true) {
+            int proposedQuantity = getValidateInput(scan, "Enter the quantity a customer will buy: ");
+            if (validateQuantity(proposedQuantity, this.totalTickets)) {
+                this.quantity = proposedQuantity;
+                break;
+            }
+            // If validation fails, prompt will repeat
+        }
     }
 
     public void saveToJsonFile(String fileName) {
