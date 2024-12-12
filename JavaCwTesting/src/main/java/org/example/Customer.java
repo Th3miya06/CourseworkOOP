@@ -1,7 +1,7 @@
 package org.example;
 
 public class Customer implements Runnable {
-    TicketPool ticketPool; //ticketPool shared by both vendors and customers
+    private TicketPool ticketPool; //ticketPool shared by both vendors and customers
     private int retrievalInterval;
     private int quantity;
 
